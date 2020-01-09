@@ -8,6 +8,7 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+
 # Allow connections to local server.
   config.hosts.clear
   
