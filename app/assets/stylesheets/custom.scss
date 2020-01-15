@@ -17,11 +17,11 @@ textarea {
 
 .center {
   text-align: center;
+  h1{
+  margin-bottom: 10px;    
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,26 +76,21 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
-}
-
-footer a {
+  a {
   color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
+  &:hover {
+  color: #222;    
+    }
+  }
+  small {
   float: left;
-}
-
-footer ul {
+  }
+ul {
   float: right;
   list-style: none;
-}
-
-footer ul li {
+  li {
   float: left;
   margin-left: 15px;
+    }
+  }
 }
