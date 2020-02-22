@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def index
     @users = User.where(activated: true).paginate(page: params[:page])
   end
+  
   def show
     @user = User.find(params[:id])
     redirect_to root_url and return unless @user.activated
@@ -31,7 +32,6 @@ class UsersController < ApplicationController
   end
   
   def update
-    # @user = User.find(params[:id])
     if @user.update(user_params)
     flash[:success] = "Profile updated."
     redirect_to @user
